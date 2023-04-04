@@ -49,6 +49,13 @@ element pop(StackType* s) {
     }
     else return s->data[(s->top)--];
 }
+element peek(StackType* s) {
+    if (is_empty(s)) {
+        fprintf(stderr, "스택 공백 에러\n");
+        return 0;
+    }
+    else return s->data[(s->top)];
+}
 
 int main(void)
 {
