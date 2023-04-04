@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define MAX_STACK_SIZE 10
-
 typedef int element;
 typedef struct {
     element* data; // data은 포인터로 정의된다. 
